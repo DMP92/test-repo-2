@@ -9,6 +9,8 @@ const sizes = {}
 sizes.width = window.innerWidth
 sizes.height = window.innerHeight
 
+const canvas = document.querySelector('.webgl');
+
 window.addEventListener('resize', () =>
 {
     // Save sizes
