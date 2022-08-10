@@ -33,7 +33,6 @@ const scene = new THREE.Scene()
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
-camera.position.z = 3
 scene.add(camera)
 
 // Test
@@ -42,7 +41,7 @@ scene.add(cube)
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('.webgl')
+    canvas: canvas
 })
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(sizes.width, sizes.height)
@@ -51,7 +50,7 @@ renderer.setSize(sizes.width, sizes.height)
 const controls = new OrbitControls(camera, canvas);
 controls.enabled = true;
 controls.enableDamping = true;
-camera.position.set(0, 0, 0);
+camera.position.set(0, 0, 3);
 controls.update();
 
 /**
