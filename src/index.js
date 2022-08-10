@@ -60,6 +60,8 @@ const loop = () =>
     // Update
     cube.rotation.y += 0.01
 
+    controls.update();
+
     // Render
     renderer.render(scene, camera)
 
