@@ -1,13 +1,22 @@
 {
-  "name": "webpack-dev-server-friday-test",
+  "name": "threejs-cool-ox-test-1",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/bundle.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DMP92/test-repo-2"
+  },
   "scripts": {
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
     "build": "webpack --config ./bundler/webpack.prod.js"
   },
-  "keywords": [],
+  "keywords": [
+    "cool-ox-test-2"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
