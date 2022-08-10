@@ -1,5 +1,6 @@
 import './style.css'
-import * as THREE from 'three'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 /**
  * Sizes
@@ -43,6 +44,13 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setPixelRatio(window.devicePixelRatio)
 renderer.setSize(sizes.width, sizes.height)
+
+// Orbit Controls
+const controls = new OrbitControls(camera, canvas);
+controls.enabled = true;
+controls.enableDamping = true;
+camera.position.set(0, 0, 0);
+controls.update();
 
 /**
  * Loop
